@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "webpack serve --env mode=development",
     "build:dev": "webpack --env mode=development",
-    "build:prod": "webpack --env mode=production"
+    "build:prod": "webpack --env mode=production",
+    "build_patch": "npm version patch -m \"Release\" && npm run build:prod",
+    "build_minor": "npm version minor -m \"Release\" && npm run build:prod",
+    "build_major": "npm version major -m \"Release\" && npm run build:prod"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
