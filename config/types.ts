@@ -4,9 +4,10 @@ export interface BuildPaths {
   public: string;
   output: string;
   src: string;
+  packageJSON: string;
 }
 
-export type BuildMode = "production" | "development";
+export type BuildMode = 'production' | 'development';
 
 export interface BuildOptions {
   mode: BuildMode;

@@ -1,28 +1,26 @@
-import { Configuration, DefinePlugin } from "webpack";
-import { BuildOptions } from "./types";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import CopyPlugin from "copy-webpack-plugin";
+import { Configuration, DefinePlugin } from 'webpack';
+import { BuildOptions } from './types';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CopyPlugin from 'copy-webpack-plugin';
 
-export const buildPlugins = (
-  options: BuildOptions
-): Configuration["plugins"] => {
-  const isProd = options.mode === "production";
+export const buildPlugins = (options: BuildOptions): Configuration['plugins'] => {
+  const isProd = options.mode === 'production';
   const html = options.paths.html;
 
-  const plugins: Configuration["plugins"] = [
-    new DefinePlugin({}),
+  const plugins: Configuration['plugins'] = [
+    new DefinePlugin({ 'window.version': JSON.stringify(require(options.paths.packageJSON).version) }),
     new CopyPlugin({
       patterns: [
         {
-          from: `./config.${isProd ? "prod" : "dev"}.json`,
-          to: "./config.json",
+          from: `./config.${isProd ? 'prod' : 'dev'}.json`,
+          to: './config.json',
         },
         {
-          from: "./public",
-          to: ".",
+          from: './public',
+          to: '.',
           filter: (resourcePath) => {
-            if (resourcePath.includes(".html")) return false;
+            if (resourcePath.includes('.html')) return false;
             return true;
           },
         },
@@ -30,7 +28,7 @@ export const buildPlugins = (
     }),
   ];
 
-  if (typeof html === "string") {
+  if (typeof html === 'string') {
     plugins.push(new HtmlWebpackPlugin({ template: html }));
   } else {
     Object.entries(html).forEach(([name, path]) => {
@@ -39,7 +37,7 @@ export const buildPlugins = (
           template: path,
           filename: `${name}.html`,
           chunks: [name],
-        })
+        }),
       );
     });
   }
