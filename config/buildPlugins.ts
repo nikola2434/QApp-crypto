@@ -3,6 +3,7 @@ import { BuildOptions } from './types';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CopyPlugin from 'copy-webpack-plugin';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 export const buildPlugins = (options: BuildOptions): Configuration['plugins'] => {
   const isProd = options.mode === 'production';
@@ -43,6 +44,7 @@ export const buildPlugins = (options: BuildOptions): Configuration['plugins'] =>
   }
 
   if (!isProd) {
+    plugins.push(new ForkTsCheckerWebpackPlugin());
   }
 
   if (isProd) {
