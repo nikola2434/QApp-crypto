@@ -6,11 +6,11 @@ import Cross from '@public/figures/cross.svg';
 export const Logos = () => {
   return (
     <div className={style.logos}>
-      <a href="/" target="_blank">
+      <a href="https://ib.bmstu.ru/" target="_blank">
         <LogoMGTU />
       </a>
       <Cross />
-      <a href="/" target="_blank">
+      <a href="https://qapp.tech/" target="_blank">
         <LogoQAPP />
       </a>
     </div>
