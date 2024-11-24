@@ -1,0 +1,14 @@
+.info {
+  width: 100%;
+  margin-bottom: 96px;
+  > p {
+    margin: 33px auto 0 auto;
+    width: 40%;
+    max-width: 520px;
+    min-width: 300px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: var(--txt_secondary_color);
+  }
+}

@@ -1,0 +1,1 @@
+export { InfoSMPC } from './InfoSMPC';

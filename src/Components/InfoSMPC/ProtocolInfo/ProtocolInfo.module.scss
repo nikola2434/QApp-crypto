@@ -1,0 +1,21 @@
+.protocol_info {
+  border-radius: 40px;
+  width: 100%;
+  overflow: hidden;
+  padding: 45px 45px 90px 45px;
+  position: relative;
+  .back {
+    background-color: #303030;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    .image {
+      position: absolute;
+      top: 0px;
+      right: 50px;
+    }
+  }
+}

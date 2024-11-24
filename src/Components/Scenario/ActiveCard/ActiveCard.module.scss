@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+  padding: 18px;
+  border-radius: 30px;
+  height: 362px;
+  width: 281px;
+  font-style: normal;
+  color: #ffffff;
+  background-color: var(--blue_color);
+  > h3 {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 32px;
+  }
+
+  .vector5 {
+    position: absolute;
+    top: 118px;
+    left: -40px;
+  }
+  .vector4 {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+  }
+  .vector3 {
+    position: absolute;
+    top: 175px;
+    right: -35px;
+  }
+
+  > p {
+    position: absolute;
+    width: 100%;
+    top: 230px;
+    left: 0px;
+    padding: 0 19px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}

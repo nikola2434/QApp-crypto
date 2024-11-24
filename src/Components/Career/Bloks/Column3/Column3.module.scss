@@ -1,0 +1,104 @@
+.column3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  gap: 12px;
+  .block_1 {
+    border-radius: 29px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ecf6fe;
+    padding: 24px 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    > h3 {
+      line-height: 30px;
+      font-weight: 600px;
+      position: relative;
+      font-size: 30px;
+    }
+    > p {
+      position: relative;
+      font-size: 14px;
+      width: 210px;
+      > span {
+        white-space: nowrap;
+      }
+    }
+
+    .research {
+      padding: 10px 19px;
+
+      position: absolute;
+      left: -10.44px;
+      top: 115px;
+      line-height: 43px;
+
+      background: linear-gradient(83.42deg, rgba(25, 193, 249, 0.7) 2.28%, rgba(25, 118, 249, 0.9) 109.47%), #1875f8;
+      border-radius: 31px;
+      transform: rotate(-15deg);
+      color: #f3f6ff;
+      font-size: 42px;
+    }
+    .business {
+      padding: 10px 19px;
+      line-height: 43px;
+      position: absolute;
+      right: -15px;
+      top: 135.75px;
+
+      background: linear-gradient(84.98deg, #f3f6ff -26.22%, rgba(25, 118, 249, 0.9) 110.48%), #1875f8;
+      border-radius: 31px;
+      transform: rotate(15deg);
+      color: #f3f6ff;
+      font-size: 42px;
+    }
+    .star_1 {
+      position: absolute;
+      left: 140.56px;
+      top: 95px;
+    }
+    .star_2 {
+      position: absolute;
+      left: 5px;
+      top: 194px;
+
+      transform: rotate(15.54deg);
+    }
+  }
+
+  .block_2_3 {
+    max-height: 160px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #ecf6fe;
+    border-radius: 29px;
+    box-sizing: border-box;
+    gap: 13px;
+    .logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .logo_gaz {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 14px;
+    }
+    > P {
+      margin: 0px 45px 24px 45px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

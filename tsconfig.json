@@ -10,7 +10,10 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@public/*": ["./public/*"],
+      "@UI/*": ["./src/Components/UI/*"]
+    },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "ts-node": {

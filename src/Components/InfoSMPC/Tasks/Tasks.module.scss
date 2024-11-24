@@ -1,0 +1,23 @@
+.tasks {
+  border-radius: 40px;
+  width: 100%;
+  overflow: hidden;
+  padding: 45px 45px 50px 45px;
+  position: relative;
+  display: flex;
+  margin-top: 37px;
+  .back {
+    background-color: #ebf4fd;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    .image {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+}

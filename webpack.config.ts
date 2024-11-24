@@ -18,10 +18,8 @@ export default (env: BuildOptions) => {
     mode: env.mode ?? 'development',
     paths,
     alias: {
-      '@screens': path.resolve(__dirname, 'src', 'Components', 'Screens'),
       '@public': path.resolve(__dirname, 'public'),
-      '@hooks': path.resolve(__dirname, 'src', 'Utils', 'hooks'),
-      '@utils': path.resolve(__dirname, 'src', 'Utils'),
+      '@UI': path.resolve(__dirname, 'src', 'Components', 'UI'),
     },
   });
 

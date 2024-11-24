@@ -1,0 +1,85 @@
+.text {
+  width: 35%;
+  min-width: 300px;
+  display: block;
+  position: relative;
+  > h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 41px;
+
+    background: linear-gradient(83.42deg, rgba(25, 193, 249, 0.3) 2.28%, rgba(25, 118, 249, 0.6) 109.47%), #f6fafd;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  > p {
+    font-weight: 400;
+    font-size: 16;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .container_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 5px;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #46464699;
+      border-radius: 16px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #ffffff;
+      height: 70px;
+    }
+
+    .block_1 {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 15px; // Размер квадрата
+        height: 15px;
+        background-color: #3d3d3d;
+        top: 50%; // По вертикали по центру
+        transform: translate(-50%, -50%) rotate(45deg); // Центровка и поворот
+        right: -11px; // Смещение вправо до края блока
+        // z-index: -1; // Чтобы стрелка находилась под блоком
+      }
+    }
+
+    .block_3 {
+      grid-column: span 2; // Растягивание на две колонки
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 76px;
+      text-align: center;
+
+      background-color: #46464699; // Фон блока
+      border-radius: 16px; // Закругленные углы (если нужно)
+
+      // Градиент для текста
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        background: linear-gradient(83.42deg, rgba(25, 193, 249, 0.3) 2.28%, rgba(25, 118, 249, 0.6) 109.47%),
+          linear-gradient(0deg, #f6fafd, #f6fafd), #ffffff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+  }
+}

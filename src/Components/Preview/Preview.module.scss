@@ -1,0 +1,11 @@
+.preview {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  padding: 85px 110px;
+  background: url('../../../public/images/bg_preview.png') center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}

@@ -1,0 +1,36 @@
+.text_container {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+
+  > span {
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  .underline_1 {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .underline_2 {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .underline_3 {
+    position: absolute;
+    top: -25px;
+    left: -120px;
+    pointer-events: none;
+  }
+}

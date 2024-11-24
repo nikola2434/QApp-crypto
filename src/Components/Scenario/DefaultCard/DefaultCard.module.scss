@@ -1,0 +1,27 @@
+.card {
+  background-color: #ecf6fe;
+  position: relative;
+  padding: 18px;
+  border-radius: 30px;
+  height: 362px;
+  width: 281px;
+  font-style: normal;
+  .num {
+    font-size: 26px;
+    font-weight: 500;
+    > strong {
+      font-size: 123px;
+      line-height: 119px;
+    }
+  }
+
+  > p {
+    position: absolute;
+    width: 100%;
+    top: 230px;
+    left: 0px;
+    padding: 0 19px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
