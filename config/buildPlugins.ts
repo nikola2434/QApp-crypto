@@ -14,10 +14,6 @@ export const buildPlugins = (options: BuildOptions): Configuration['plugins'] =>
     new CopyPlugin({
       patterns: [
         {
-          from: `./config.${isProd ? 'prod' : 'dev'}.json`,
-          to: './config.json',
-        },
-        {
           from: './public',
           to: '.',
           filter: (resourcePath) => {

@@ -10,7 +10,9 @@ export const Career = () => {
 
       <Blocks />
 
-      <Button text="Участие бесплатно">Зарегистрироваться на митап</Button>
+      <Button text="Участие бесплатно" size="lg">
+        Зарегистрироваться на митап
+      </Button>
     </section>
   );
 };
