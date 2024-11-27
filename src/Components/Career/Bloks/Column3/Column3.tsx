@@ -1,5 +1,5 @@
 import Vector6 from '@public/figures/star.svg';
-import Gazprom from '@public/icons/logos/Gazprombank.svg';
+import Cup from '@public/figures/cup.svg';
 import Startech from '@public/icons/logos/startech.svg';
 
 import style from './Column3.module.scss';
@@ -26,13 +26,15 @@ export const Column3 = () => {
       </div>
 
       <div className={style.block_2_3}>
-        <div className={style.logo_gaz}>
-          <Gazprom />
+        <div className={style.cup}>
+          <Cup />
+          <div className={style.block_2_star_1}>
+            <Vector6 />
+          </div>
+          <div className={style.block_2_star_2}>
+            <Vector6 />
+          </div>
         </div>
-        <p>При стратегической поддержке Газпромбанка</p>
-      </div>
-
-      <div className={style.block_2_3}>
         <div className={style.logo}>
           <Startech />
         </div>

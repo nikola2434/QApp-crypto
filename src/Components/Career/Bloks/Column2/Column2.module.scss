@@ -1,6 +1,6 @@
 .column2 {
   width: 620px;
-  height: 100%;
+  height: 650px;
   border-radius: 40px;
   background: linear-gradient(170.03deg, #000051 4.42%, rgba(25, 118, 249, 0) 92.52%), #1976f9;
 
@@ -10,6 +10,8 @@
     width: 100%;
     align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
     margin-bottom: 38px;
     .sub_logos {
       margin-top: 10px;
@@ -23,7 +25,6 @@
     font-size: 35px;
     color: #ffff;
     margin-bottom: 16px;
-    line-height: 36px;
   }
 
   .tags {
@@ -48,16 +49,56 @@
     margin-bottom: 19px;
   }
   .clients {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    align-items: center;
+    gap: 0px 20px;
     .item {
+      min-width: 115px;
+      width: 20%;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .column2 {
+    order: 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .column2 {
+    height: fit-content;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .column2 {
+    padding: 46px 24px;
+    .header {
+      margin-bottom: 50px;
+    }
+
+    > h2 {
+      font-size: 26px;
+    }
+
+    .tags {
+      .tag {
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 4px 8px;
+      }
+    }
+
+    .clients {
+      gap:0px 5px;
     }
   }
 }

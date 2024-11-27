@@ -5,3 +5,15 @@
   flex-direction: column;
   padding-bottom: 103px;
 }
+
+@media (max-width: 1000px) {
+  .career {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .career {
+    padding-bottom: 30px;
+  }
+}

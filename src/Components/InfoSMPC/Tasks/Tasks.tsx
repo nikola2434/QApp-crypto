@@ -1,4 +1,5 @@
-import BgImage from '@public/images/bg3.png';
+import BgProtocol from '@public/images/bgProtocol.png';
+import Logo from '@public/images/logo.png';
 import { LeftBlock } from './LeftBlock';
 import { RightBlock } from './RightBlock';
 
@@ -8,7 +9,8 @@ export const Tasks = () => {
   return (
     <div className={style.tasks}>
       <div className={style.back}>
-        <img src={BgImage} alt="" className={style.image} draggable={false} />
+        <img src={Logo} alt="" className={style.logo} draggable={false} />
+        <img src={BgProtocol} alt="" className={style.image} draggable={false} />
       </div>
 
       <LeftBlock />

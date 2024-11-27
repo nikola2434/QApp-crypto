@@ -4,3 +4,21 @@
   grid-template-columns: 200px 74px 370px;
   margin-top: 90px;
 }
+
+@media (max-width: 1000px) {
+  .timeline {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .timeline {
+    grid-template-columns: 112px 40px 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  .timeline {
+    margin-top: 30px;
+  }
+}

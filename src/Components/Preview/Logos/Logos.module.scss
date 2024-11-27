@@ -2,4 +2,34 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  width: 100%;
+  position: relative;
+  .cross {
+    width: 50px;
+  }
+  > a {
+    width: 300px;
+  }
+  //   top: 0px;
+  //   left: 0px;
+}
+
+@media (max-width: 1000px) {
+  .logos {
+    gap: 0px;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 650px) {
+  .logos {
+    gap: 0px;
+    .cross {
+      width: 40px;
+    }
+    > a {
+      width: 250px;
+    }
+  }
 }

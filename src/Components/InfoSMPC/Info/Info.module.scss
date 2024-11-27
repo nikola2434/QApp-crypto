@@ -12,3 +12,20 @@
     color: var(--txt_secondary_color);
   }
 }
+
+@media (max-width: 1000px) {
+  .info {
+    margin-bottom: 80px;
+    > P {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .info {
+    > P {
+      font-size: 14px;
+    }
+  }
+}

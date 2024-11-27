@@ -11,7 +11,7 @@ export const Career = () => {
       <Blocks />
 
       <Button text="Участие бесплатно" size="lg">
-        Зарегистрироваться на митап
+        Зарегистрироваться
       </Button>
     </section>
   );

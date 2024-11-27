@@ -37,10 +37,6 @@ export const Column2 = () => {
         <div className={style.item}>
           <SBER />
         </div>
-
-        <div className={style.item}>
-          <Gazprom />
-        </div>
         <div className={style.item}>
           <Nspk />
         </div>

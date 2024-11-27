@@ -4,8 +4,52 @@
   width: 100%;
   position: relative;
   z-index: 100;
+  min-height: 700px;
   padding: 85px 110px;
-  background: url('../../../public/images/bg_preview.png') center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
+  .back {
+    background-color: #ebf4fd;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    .image {
+      width: 100%;
+      height: 100%;
+      background-position: bottom right;
+      -webkit-background-size: auto;
+      background-size: auto;
+    }
+    .logo {
+      position: absolute;
+      right: -10%;
+      bottom: -12%;
+      width: 40%;
+      min-width: 450px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .preview {
+    padding: 35px 55px;
+  }
+}
+
+@media (max-width: 800px) {
+  .preview {
+    .back {
+      .logo {
+        bottom: 40px;
+        left: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .preview {
+    padding: 17px 23px;
+  }
 }

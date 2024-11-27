@@ -12,12 +12,43 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     .image {
+      width: 100%;
+      height: 100%;
+      background-position: bottom center;
+      -webkit-background-size: auto;
+      background-size: auto;
+    }
+    .logo {
       position: absolute;
-      bottom: 0px;
-      left: 0px;
+      left: -166px;
+      bottom: -380px;
+      width: 870px;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .tasks {
+    padding: 32px 24px 0px 24px;
+    border-radius: 26px;
+    height: 730px;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tasks {
+    border-radius: 16px;
+    .back {
+      .logo {
+        width: 470px;
+        left: -92px;
+        bottom: -200px;
+      }
     }
   }
 }

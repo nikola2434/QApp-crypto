@@ -1,11 +1,25 @@
 .experts {
   padding-top: 86px;
   padding-bottom: 75px;
-  .container_experts {
+  .container {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 40px;
     margin-top: 91px;
+    .container_experts {
+      display: flex;
+      min-width: 0;
+      justify-content: center;
+      gap: 10px 40px;
+      padding: 0 66px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .experts {
+    padding-top: 64px;
+    padding-bottom: 43px;
   }
 }

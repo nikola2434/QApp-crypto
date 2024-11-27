@@ -21,8 +21,8 @@
   .underline_2 {
     position: absolute;
     top: 0;
-    left: -20px;
-    width: 100%;
+    left: -7%;
+    width: 109%;
     height: 100%;
     pointer-events: none;
   }
@@ -32,5 +32,25 @@
     top: -25px;
     left: -120px;
     pointer-events: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text_container {
+    .underline_3 {
+      left: -90px;
+      top: -15px;
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .text_container {
+    .underline_3 {
+      left: -75px;
+      top: -15px;
+      transform: scale(0.6);
+    }
   }
 }

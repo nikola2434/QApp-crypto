@@ -12,29 +12,31 @@ export const Organizers = () => {
       <div className={style.rect}></div>
       <Header>Организаторы</Header>
       <div className={style.container}>
-        <ItemOrganizator
-          img={IU10}
-          link="https://iu10.bmstu.ru/"
-          title={
-            <>
-              Кафедра ИУ10 <span>«Защита информации»</span>
-            </>
-          }
-        />
-        <ItemOrganizator img={QApp} link="https://qapp.tech/" title="QApp" />
-        <ItemOrganizator
-          img={MGTU}
-          link="https://ib.bmstu.ru/"
-          title={
-            <>
-              ИНФОБЕЗ
-              <br />
-              МГТУ им. Н.Э. Баумана
-              <br />
-              Центр дополнительного образования
-            </>
-          }
-        />
+        <div className={style.container_organizers}>
+          <ItemOrganizator
+            img={IU10}
+            link="https://iu10.bmstu.ru/"
+            title={
+              <>
+                Кафедра ИУ10 <span>«Защита информации»</span>
+              </>
+            }
+          />
+          <ItemOrganizator img={QApp} link="https://qapp.tech/" title="QApp" />
+          <ItemOrganizator
+            img={MGTU}
+            link="https://ib.bmstu.ru/"
+            title={
+              <>
+                ИНФОБЕЗ
+                <br />
+                МГТУ им. Н.Э. Баумана
+                <br />
+                Центр дополнительного образования
+              </>
+            }
+          />
+        </div>
       </div>
     </section>
   );

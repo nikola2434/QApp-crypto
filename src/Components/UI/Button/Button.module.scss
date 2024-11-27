@@ -9,6 +9,7 @@
     margin-bottom: 16px;
     border-radius: 60px;
     padding: 20px 50px;
+    font-size: 22px;
     position: relative;
     transition: all 0.2s ease-in-out;
     .active_children {
@@ -55,6 +56,7 @@
     border-radius: 100px;
     padding: 32px 90px;
     position: relative;
+    font-size: 28px;
     transition: all 0.2s ease-in-out;
     .active_children {
       z-index: 2;
@@ -98,5 +100,27 @@
     width: 100%;
     text-align: center;
     color: var(--txt_secondary_color);
+  }
+}
+
+@media (max-width: 1000px) {
+  .btn {
+    .link__md {
+      font-size: 20px;
+    }
+    .link__lg {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .btn {
+    .link__md {
+      font-size: 18px;
+    }
+    .link__lg {
+      font-size: 18px;
+    }
   }
 }

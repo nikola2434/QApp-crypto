@@ -10,7 +10,7 @@
     align-items: start;
     display: flex;
     > img {
-      object-fit: cover;
+      width: 100%;
     }
   }
 
@@ -28,6 +28,26 @@
       color: var(--blue_color);
       > span {
         white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    height: 295px;
+    width: 210px;
+    .image {
+      width: 207px;
+      height: 191px;
+    }
+    .container {
+      padding: 16px 10px 10px;
+      > h3 {
+        font-size: 24px;
+      }
+      > span {
+        font-size: 13px;
       }
     }
   }

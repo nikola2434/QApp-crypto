@@ -1,0 +1,1 @@
+export { ProtocolImage } from './ProtocolImage';

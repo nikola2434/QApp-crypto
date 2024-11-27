@@ -1,5 +1,5 @@
 import Vector3 from '@public/figures/vector3.svg';
-import Vector4 from '@public/figures/vector4.svg';
+import Vector4 from '@public/figures/levin.svg';
 import Vector5 from '@public/figures/vector5.svg';
 import Random from '@public/images/random.png';
 

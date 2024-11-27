@@ -4,18 +4,23 @@
   overflow: hidden;
   padding: 45px 45px 90px 45px;
   position: relative;
-  .back {
-    background-color: #303030;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    .image {
-      position: absolute;
-      top: 0px;
-      right: 50px;
-    }
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: #303030;
+}
+
+@media (max-width: 1000px) {
+  .protocol_info {
+    padding: 32px 24px 0px 24px;
+    border-radius: 26px;
+    height: 730px;
+  }
+}
+
+@media (max-width: 650px) {
+  .protocol_info {
+    border-radius: 16px;
   }
 }

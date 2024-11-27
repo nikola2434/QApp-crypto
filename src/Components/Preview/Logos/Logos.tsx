@@ -9,7 +9,9 @@ export const Logos = () => {
       <a href="https://ib.bmstu.ru/" target="_blank">
         <LogoMGTU />
       </a>
-      <Cross />
+      <div className={style.cross}>
+        <Cross />
+      </div>
       <a href="https://qapp.tech/" target="_blank">
         <LogoQAPP />
       </a>
