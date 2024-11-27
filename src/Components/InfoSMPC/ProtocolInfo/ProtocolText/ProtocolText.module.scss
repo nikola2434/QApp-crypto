@@ -1,6 +1,6 @@
 .text {
   width: 35%;
-  min-width: 385px;
+
   display: block;
   position: relative;
   z-index: 1;
@@ -101,6 +101,9 @@
       font-size: 12px;
       > div {
         border-radius: 12px;
+      }
+      .block_3 {
+        padding: 0px;
       }
     }
   }
