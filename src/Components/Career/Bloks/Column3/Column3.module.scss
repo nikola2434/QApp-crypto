@@ -36,26 +36,24 @@
       position: absolute;
       left: -10.44px;
       top: 115px;
-      line-height: 43px;
 
       background: linear-gradient(83.42deg, rgba(25, 193, 249, 0.7) 2.28%, rgba(25, 118, 249, 0.9) 109.47%), #1875f8;
-      border-radius: 31px;
+      border-radius: 35px;
       transform: rotate(-15deg);
       color: #f3f6ff;
-      font-size: 42px;
+      font-size: 40px;
     }
     .business {
       padding: 10px 19px;
-      line-height: 43px;
       position: absolute;
       left: 130px;
       top: 135.75px;
 
       background: linear-gradient(84.98deg, #f3f6ff -26.22%, rgba(25, 118, 249, 0.9) 110.48%), #1875f8;
-      border-radius: 31px;
+      border-radius: 35px;
       transform: rotate(15deg);
       color: #f3f6ff;
-      font-size: 42px;
+      font-size: 40px;
     }
     .star_1 {
       position: absolute;
@@ -130,32 +128,35 @@
       height: 223px;
       > p {
         width: 70%;
+        max-width: 200px;
       }
       .research {
         position: absolute;
         // left: 129.99px;
         left: auto;
-        right: 110px;
-        top: 30.28px;
+        right: 60px;
+        top: 55.28px;
+        font-size: 38px;
       }
       .business {
         position: absolute;
         left: auto;
-        right: -12px;
-        top: 79.34px;
+        right: -30px;
+        top: 110.34px;
+        font-size: 38px;
       }
       .star_1 {
         position: absolute;
         left: auto;
-        right: 70.6px;
-        top: 30.04px;
+        right: 30.6px;
+        top: 50.04px;
       }
       .star_2 {
         position: absolute;
         left: auto;
         right: 100px;
         top: auto;
-        bottom: 40px;
+        bottom: 20px;
       }
     }
 

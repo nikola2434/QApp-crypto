@@ -34,7 +34,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      background-color: #46464699;
+      background-color: #3d3d3d;
       border-radius: 16px;
       font-weight: 700;
       font-size: 16px;
@@ -53,7 +53,7 @@
         top: 50%; // По вертикали по центру
         transform: translate(-50%, -50%) rotate(45deg); // Центровка и поворот
         right: -11px; // Смещение вправо до края блока
-        // z-index: -1; // Чтобы стрелка находилась под блоком
+        z-index: -1; // Чтобы стрелка находилась под блоком
       }
     }
 
@@ -65,7 +65,7 @@
       padding: 18px 76px;
       text-align: center;
 
-      background-color: #46464699; // Фон блока
+      background-color: #3d3d3d; // Фон блока
       border-radius: 16px; // Закругленные углы (если нужно)
 
       // Градиент для текста
@@ -98,7 +98,6 @@
 
     .container_block {
       width: 100%;
-      font-size: 12px;
       > div {
         border-radius: 12px;
       }
@@ -114,6 +113,17 @@
     width: 100%;
     > h2 {
       font-size: 26px;
+    }
+
+    .container_block {
+      width: 100%;
+      > div {
+        font-size: 12px;
+        border-radius: 12px;
+      }
+      .block_3 {
+        padding: 0px;
+      }
     }
   }
 }
