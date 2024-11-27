@@ -1,5 +1,5 @@
 import { TimelineItem } from './TimelineItem';
-import Expert4 from '@public/images/expert4.png';
+import Expert4 from '@public/images/expert4.jpg';
 import Expert3 from '@public/images/expert3.png';
 import Expert2 from '@public/images/expert2.png';
 import Expert1 from '@public/images/expert1.png';
