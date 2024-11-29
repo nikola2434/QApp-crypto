@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   z-index: 100;
-  min-height: 700px;
+  min-height: 750px;
   padding: 85px 110px;
   .back {
     background-color: #ebf4fd;
@@ -27,9 +27,10 @@
     }
     .logo {
       position: absolute;
-      right: -10%;
-      bottom: -12%;
-      width: 40%;
+      right: -15%;
+      bottom: -300px;
+      width: 60%;
+      //   max-width: 1200px;
       min-width: 450px;
       > svg {
         height: 100%;
@@ -42,6 +43,13 @@
 @media (max-width: 1000px) {
   .preview {
     padding: 35px 55px;
+
+    .back {
+      .logo {
+        width: 70%;
+        bottom: -150px;
+      }
+    }
   }
 }
 
@@ -51,6 +59,7 @@
       .logo {
         bottom: 25px;
         left: 10%;
+        width: 20%;
       }
     }
   }

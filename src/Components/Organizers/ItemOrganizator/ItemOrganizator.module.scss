@@ -1,21 +1,21 @@
 .link {
   display: block;
-  width: 300px;
+  width: 290px;
   overflow: hidden;
   .image {
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 240px;
     > img {
-      width: 300px;
-      height: 300px;
-      object-fit: contain;
+      object-fit: scale-down;
+
     }
   }
 
   > span {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 20px;
     width: 100%;
@@ -45,24 +45,24 @@
 
     > span {
       font-size: 14px;
-      margin-top: 15px;
+      margin-top: 0px;
     }
   }
 }
 
-@media (max-width: 650px) {
-  .link {
-    width: 140px;
-    .image {
-      > img {
-        width: 140px;
-        height: 140px;
-      }
-    }
+// @media (max-width: 650px) {
+//   .link {
+//     width: 140px;
+//     .image {
+//       > img {
+//         width: 140px;
+//         height: 140px;
+//       }
+//     }
 
-    > span {
-      font-size: 12px;
-      margin-top: 10px;
-    }
-  }
-}
+//     > span {
+//       font-size: 12px;
+//       margin-top: 10px;
+//     }
+//   }
+// }

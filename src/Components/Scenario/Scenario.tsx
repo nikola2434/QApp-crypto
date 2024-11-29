@@ -39,7 +39,7 @@ export const Scenario = () => {
             num={3}
             numText={
               <>
-                блок
+                блока
                 <br />
                 про SMPC
               </>

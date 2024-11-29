@@ -52,6 +52,9 @@ export const Column2 = () => {
         <div className={style.item}>
           <Astra />
         </div>
+        <div className={style.item}>
+          <Gazprom />
+        </div> 
       </div>
     </div>
   );

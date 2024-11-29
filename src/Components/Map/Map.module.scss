@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 173px;
+  padding-top: 86px;
   .container {
     margin-top: 120px;
     display: flex;
@@ -103,13 +104,14 @@
 @media (max-width: 650px) {
   .map {
     padding-bottom: 80px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 64px;
     .container {
       margin-top: 30px;
       gap: 10px;
       > img {
-        width: 360px;
+        width: 350px;
       }
 
       .info {

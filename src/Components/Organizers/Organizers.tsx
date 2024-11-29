@@ -1,7 +1,7 @@
 import { Header } from '@UI/Header';
 import { ItemOrganizator } from './ItemOrganizator';
 import IU10 from '@public/images/iu10.png';
-import QApp from '@public/images/QApp_Avatar-white.png';
+import QApp from '@public/images/QAPP.png';
 import MGTU from '@public/images/MGTU.png';
 
 import style from './Organizers.module.scss';
@@ -22,7 +22,12 @@ export const Organizers = () => {
               </>
             }
           />
-          <ItemOrganizator img={QApp} link="https://qapp.tech/" title="QApp" />
+          <ItemOrganizator
+            img={QApp}
+            link="https://qapp.tech/"
+            title="Отечественная компания сегмента кибербезопасности
+QApp (ООО «КуАпп»)"
+          />
           <ItemOrganizator
             img={MGTU}
             link="https://ib.bmstu.ru/"
