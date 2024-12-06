@@ -9,8 +9,8 @@ export const Tasks = () => {
   return (
     <div className={style.tasks}>
       <div className={style.back}>
-        <img src={Logo} alt="" className={style.logo} draggable={false} />
-        <img src={BgProtocol} alt="" className={style.image} draggable={false} />
+        <img src={Logo} alt="" className={style.logo} draggable={false} loading="lazy" />
+        <img src={BgProtocol} alt="" className={style.image} draggable={false} loading="lazy" />
       </div>
 
       <LeftBlock />

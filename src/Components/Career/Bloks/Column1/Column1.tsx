@@ -10,7 +10,7 @@ export const Column1 = () => {
     <div className={style.column}>
       <div className={style.block_1}>
         <div className={style.image}>
-          <img src={Random} alt="Карьера в QApp" draggable={false} />
+          <img src={Random} alt="Карьера в QApp" draggable={false} loading="lazy" />
         </div>
         <div className={style.vector4}>
           <Vector5 />

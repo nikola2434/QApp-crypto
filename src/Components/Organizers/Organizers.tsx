@@ -16,6 +16,7 @@ export const Organizers = () => {
           <ItemOrganizator
             img={IU10}
             link="https://iu10.bmstu.ru/"
+            alt="Кафедра ИУ10 «Защита информации»"
             title={
               <>
                 Кафедра ИУ10 <span>«Защита информации»</span>
@@ -31,6 +32,7 @@ QApp (ООО «КуАпп»)"
           <ItemOrganizator
             img={MGTU}
             link="https://ib.bmstu.ru/"
+            alt="ИНФОБЕЗ МГТУ им. Н.Э. Баумана Центр дополнительного образования"
             title={
               <>
                 ИНФОБЕЗ

@@ -17,7 +17,7 @@ export const TimelineItem: FC<TimelineItemProps> = ({ name, time, title, img, su
       <div className={style.item_image}>
         {img ? (
           <div className={style.image}>
-            <img alt={name} src={img} draggable={false} />
+            <img alt={name} src={img} draggable={false} loading="lazy" />
           </div>
         ) : (
           <span className={style.circle}></span>

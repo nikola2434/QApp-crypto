@@ -10,7 +10,7 @@ export const Expert: FC<PropsWithChildren<ExpertProps>> = ({ img, title, childre
   return (
     <div className={style.card}>
       <div className={style.image}>
-        <img src={img} alt={`${title} (${children})`} draggable="false" />
+        <img src={img} alt={`${title} (${children})`} draggable="false" loading="lazy" />
       </div>
       <div className={style.container}>
         <h3>{title}</h3>
