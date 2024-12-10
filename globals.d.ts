@@ -5,6 +5,7 @@ declare module '*.png';
 declare module '*.jpg';
 declare module '*.jpeg';
 declare module '*.gif';
+declare module '*.webm';
 
 declare module '*.svg' {
   import React = require('react');

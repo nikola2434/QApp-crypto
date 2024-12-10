@@ -4,6 +4,7 @@ import { Mark } from '@UI/Mark';
 import { DefaultCard } from './DefaultCard';
 import { ActiveCard } from './ActiveCard';
 import { Button } from '@UI/Button';
+import { Video } from '@UI/Video';
 
 export const Scenario = () => {
   return (
@@ -51,9 +52,7 @@ export const Scenario = () => {
         </div>
       </div>
 
-      <Button text="Участие бесплатно" size="lg">
-        Зарегистрироваться
-      </Button>
+      <Video />
     </section>
   );
 };

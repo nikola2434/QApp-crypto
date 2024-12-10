@@ -2,6 +2,7 @@ import { Header } from '@UI/Header';
 import style from './Career.module.scss';
 import { Button } from '@UI/Button';
 import { Blocks } from './Bloks';
+import { Video } from '@UI/Video';
 
 export const Career = () => {
   return (
@@ -10,9 +11,7 @@ export const Career = () => {
 
       <Blocks />
 
-      <Button text="Участие бесплатно" size="lg">
-        Зарегистрироваться
-      </Button>
+      <Video />
     </section>
   );
 };

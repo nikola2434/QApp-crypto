@@ -15,13 +15,13 @@ export const Title = () => {
       <h1>
         Конфиденциальные <br /> вычисления <strong>meetup</strong>
       </h1>
-      <div className={style.btn}>
+      {/* <div className={style.btn}>
         <a className={style[`link__md`]} href="https://forms.yandex.ru/u/673d9a0cd04688885cae3421/" target="_blank">
           <span className={style.active_children}>Зарегистрироваться</span>
           <span className={style.hover_children}>Зарегистрироваться</span>
         </a>
         <span>Участие бесплатно</span>
-      </div>
+      </div> */}
     </div>
   );
 };
