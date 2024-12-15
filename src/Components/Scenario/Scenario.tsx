@@ -3,8 +3,8 @@ import style from './Scenario.module.scss';
 import { Mark } from '@UI/Mark';
 import { DefaultCard } from './DefaultCard';
 import { ActiveCard } from './ActiveCard';
-import { Button } from '@UI/Button';
-import { Video } from '@UI/Video';
+// import { Button } from '@UI/Button';
+// import { Video } from 'src/Components/HowItWas/Video';
 
 export const Scenario = () => {
   return (
@@ -51,8 +51,6 @@ export const Scenario = () => {
           <ActiveCard />
         </div>
       </div>
-
-      <Video />
     </section>
   );
 };

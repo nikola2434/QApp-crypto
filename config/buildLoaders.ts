@@ -6,7 +6,7 @@ export const buildLoaders = (options: BuildOptions): ModuleOptions["rules"] => {
   const isProd = options.mode === "production";
 
   const assetLoader = {
-    test: /\.(png|jpg|jpeg|gif|mp4|webm)$/i,
+    test: /\.(png|jpg|jpeg|gif|mp4|webm|webp)$/i,
     type: "asset/resource",
   };
 
