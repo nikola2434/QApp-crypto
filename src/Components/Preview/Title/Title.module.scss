@@ -1,8 +1,8 @@
 .info {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 110px;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -40%);
   .tags {
     display: flex;
     gap: 16px;
@@ -17,58 +17,31 @@
     > strong {
       color: var(--blue_color);
     }
+    margin-bottom: 10px;
+  }
+
+  > span {
+    font-size: 24px;
+    font-weight: 400;
     margin-bottom: 20px;
+    display: block;
   }
 
   .btn {
+    margin-top: 34px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    .link__md {
-      background-color: var(--txt_color);
+    > a {
+      padding: 26px 52px;
+      border-radius: 82px;
       font-weight: 600;
-      cursor: pointer;
-      margin-bottom: 16px;
-      border-radius: 60px;
-      padding: 20px 50px;
-      font-size: 22px;
-      position: relative;
-      transition: all 0.2s ease-in-out;
-      .active_children {
-        z-index: 2;
-        position: relative;
-        opacity: 1;
-        color: var(--bg_color);
-        transition: all 0.2s ease-in-out;
-      }
-      .hover_children {
-        opacity: 0;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(83.42deg, rgba(25, 193, 249, 0.3) 2.28%, rgba(25, 118, 249, 0.6) 109.47%), #ffffff;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-        transition: all 0.2s ease-in-out;
-      }
-
-      &:hover .active_children {
-        opacity: 0;
-      }
-      &:hover .hover_children {
-        opacity: 1;
-      }
-      &:hover {
-        box-shadow: 0px 4px 4px #82bcfc;
-      }
+      font-size: 26px;
+      text-align: center;
+      width: 100%;
+      color: #ffffff;
+      background-color: rgba(24, 117, 248, 1);
+      margin-bottom: 26px;
     }
     > span {
       font-size: 16px;
@@ -82,6 +55,9 @@
 
 @media (max-width: 1000px) {
   .info {
+    > span {
+      font-size: 20px;
+    }
     .tags {
       gap: 5px 2px;
     }
@@ -91,8 +67,8 @@
     }
     left: 50px;
     .btn {
-      .link__md {
-        font-size: 20px;
+      > a {
+        font-size: 20px !important;
       }
     }
   }
@@ -125,6 +101,9 @@
 @media (max-width: 650px) {
   .info {
     padding-right: 23px;
+    > span {
+      font-size: 16px;
+    }
     > h1 {
       min-width: 300px;
       margin-top: 10px;
@@ -132,8 +111,8 @@
     }
   }
   .btn {
-    .link__md {
-      font-size: 18px;
+    > a {
+      font-size: 18px !important;
     }
   }
 }

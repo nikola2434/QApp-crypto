@@ -1,14 +1,16 @@
-import { Info } from './Info';
 import style from './InfoSMPC.module.scss';
-import { ProtocolInfo } from './ProtocolInfo';
-import { Tasks } from './Tasks';
+import { Block2 } from './Block2';
+import { Header } from '@UI/Header';
+import { Block1 } from './Block1';
+import { Block3 } from './Block3';
 
-export const InfoSMPC = () => {
+export const Info = () => {
   return (
-    <section className={style.info}>
-      <Info />
-      <ProtocolInfo />
-      <Tasks />
+    <section className={style.info} id="info">
+      <Header>О технологии</Header>
+      <Block1 />
+      <Block2 />
+      <Block3 />
     </section>
   );
 };

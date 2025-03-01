@@ -1,0 +1,49 @@
+.prize {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  padding: 16px 16px 32px 16px;
+  margin: 0 66px; // Отступы внутри контейнера
+  background-color: #124adf;
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    .image {
+      width: 100%;
+      height: 100%;
+      background-position: bottom center;
+      -webkit-background-size: auto;
+      background-size: auto;
+      object-fit: cover;
+    }
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 5;
+    color: #ffffff;
+    position: relative;
+    gap: 60px;
+    > img {
+      width: 158px;
+    }
+
+    > span {
+      font-size: 28px;
+      line-height: 33px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .prize {
+
+  }
+}

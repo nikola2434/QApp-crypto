@@ -1,0 +1,85 @@
+.nav {
+  > ul {
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none; /* Убираем маркеры */
+    padding: 0; /* Убираем внутренний отступ */
+    margin: 0; /* Убираем внешний отступ */
+    .primary {
+      padding: 7px 10px;
+      color: #f6fafd;
+      position: relative;
+      //   width: 100%;
+      overflow: hidden; /* Обрезает выходящий контент */
+      > span {
+        position: relative;
+        z-index: 1;
+      }
+      > div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #031c46;
+        overflow: hidden;
+        border-radius: 10px;
+        &::before {
+          content: ''; /* Добавляем пустой контент */
+          position: absolute;
+          width: 103.91px;
+          height: 72.18px;
+          flex-shrink: 0;
+          right: -40px;
+          top: 10px;
+          display: block;
+          background: #0453ee;
+          filter: blur(17.1895px);
+          transform: rotate(150deg);
+          z-index: 0;
+        }
+      }
+      &:hover {
+        color: #f6fafd;
+        box-shadow: 0px 4px 4px #1875f8;
+      }
+    }
+    a {
+      flex-shrink: 0;
+      transition: all 0.2s ease-in-out;
+    }
+    a:hover {
+      color: var(--blue_color);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    > ul {
+      gap: 20px;
+      font-size: 14px;
+      .primary {
+        padding: 5px 7px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .nav {
+    > ul {
+      gap: 8px;
+      font-size: 10px;
+      .primary {
+        padding: 3px 5px;
+        > div {
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}

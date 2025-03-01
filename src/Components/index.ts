@@ -1,2 +1,3 @@
 export { Preview } from './Preview';
-export { InfoSMPC } from './InfoSMPC';
+export { Info } from './InfoSMPC';
+export { Toolbar } from './Toolbar';

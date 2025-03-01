@@ -1,0 +1,22 @@
+.task {
+  background-color: var(--bg_color);
+  border-radius: 16px;
+  padding: 28px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  min-width: 280px;
+  > span {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .icon {
+    max-height: 45px;
+    display: flex;
+    align-items: center;
+    > img {
+      object-fit: scale-down;
+    }
+    margin-bottom: 10px;
+  }
+}

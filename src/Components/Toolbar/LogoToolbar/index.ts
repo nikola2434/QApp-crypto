@@ -1,0 +1,1 @@
+export { LogoToolbar } from './LogoToolbar';

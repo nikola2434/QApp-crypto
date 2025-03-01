@@ -1,7 +1,7 @@
 .timeline {
   display: grid;
   position: relative;
-  grid-template-columns: 200px 74px 370px;
+  grid-template-columns: 80px 90px 400px;
   margin-top: 90px;
 }
 
@@ -13,12 +13,13 @@
 
 @media (max-width: 800px) {
   .timeline {
-    grid-template-columns: 112px 40px 200px;
+    grid-template-columns: 80px 40px 200px;
   }
 }
 
 @media (max-width: 650px) {
   .timeline {
+    grid-template-columns: 70px 40px 200px;
     margin-top: 30px;
   }
 }

@@ -4,14 +4,19 @@
   padding: 18px;
   border-radius: 30px;
   height: 362px;
-  min-width: 281px;
+  width: 281px;
+  flex-shrink: 0;
   font-style: normal;
   .num {
     font-size: 26px;
     font-weight: 500;
-    > strong {
+    line-height: 33px;
+    > div {
       font-size: 123px;
       line-height: 119px;
+      height: 120px;
+      display: flex;
+      align-items: center;
     }
   }
 

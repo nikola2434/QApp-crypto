@@ -1,1 +1,0 @@
-export { Spher } from './Spher';

@@ -1,0 +1,31 @@
+.block {
+  width: 115px;
+  flex-shrink: 0;
+  height: 115px;
+  background: radial-gradient(87.85% 96.78% at 84.07% 9.58%, #5aaaff 0%, #004ee9 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    > img {
+      height: 100%; /* Растягиваем изображение на всю высоту .container */
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .block {
+    width: 100px;
+    height: 100px;
+    .container {
+      height: 40px;
+    }
+  }
+}

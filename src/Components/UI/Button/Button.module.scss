@@ -12,6 +12,7 @@
     font-size: 22px;
     position: relative;
     transition: all 0.2s ease-in-out;
+    white-space: nowrap;
     .active_children {
       z-index: 2;
       position: relative;

@@ -5,50 +5,33 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  .row_1 {
-    display: block;
-    width: 520px;
-    text-align: start;
-    margin: 0 auto;
-  }
-  .row_2 {
-    margin: 0 auto;
-    display: block;
-    width: 520px;
-    text-align: end;
-  }
 
   .container {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 92px;
-    margin-bottom: 50px;
+    margin-bottom: 74px;
     // overflow: auto;
-    .cards {
-      display: flex;
-      gap: 13px;
-      min-width: 0; // Не даем растягиваться больше контейнера
-      overflow-x: auto; // Горизонтальная прокрутка
-      padding: 0 66px; // Отступы внутри контейнера
-      flex-wrap: wrap;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      justify-content: center;
-      &::-webkit-scrollbar {
-        display: none;
+    .container_grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      gap: 10px;
+      .cards {
+        padding: 0 66px; // Отступы внутри контейнера
+        display: flex;
+        gap: 13px;
+        min-width: 0; // Не даем растягиваться больше контейнера
+        overflow-x: auto; // Горизонтальная прокрутка
+        flex-wrap: wrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        justify-content: center;
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
-    }
-  }
-}
-
-@media (max-width: 1000px) {
-  .scenario {
-    .row_1 {
-      width: 350px;
-    }
-    .row_2 {
-      width: 350px;
     }
   }
 }
@@ -56,12 +39,6 @@
 @media (max-width: 650px) {
   .scenario {
     padding-bottom: 20px;
-    .row_1 {
-      width: 270px;
-    }
-    .row_2 {
-      width: 270px;
-    }
 
     .container {
       margin-top: 80px;

@@ -1,0 +1,87 @@
+.block3 {
+  border-radius: 40px;
+  width: 100%;
+  overflow: hidden;
+  padding: 45px 45px 50px 45px;
+  position: relative;
+  margin-top: 40px;
+  height: 595px;
+  background-color: #f8f7f9;
+  > h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 22px;
+    width: 380px;
+  }
+  > span {
+    display: inline-block;
+    width: 380px;
+    font-size: 16px;
+  }
+  .bg2 {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+  }
+  .bg1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 72px;
+    right: 112px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .block3 {
+    height: fit-content;
+    > h2 {
+      width: fit-content;
+    }
+    > span {
+      width: fit-content;
+    }
+    .bg2 {
+      position: initial;
+      width: 100%;
+      overflow: auto;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      > img {
+        max-width: none;
+        object-fit: none;
+      }
+    }
+    .bg1 {
+      display: none;
+    }
+    .btn {
+      position: initial;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .block3 {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .block3 {
+    border-radius: 16px;
+    > h2 {
+      font-size: 26px;
+    }
+  }
+}

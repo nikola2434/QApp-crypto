@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: var(--txt_color);
-  scroll-padding-top: 107px;
+  scroll-padding-top: var(--toolbar-height);
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }

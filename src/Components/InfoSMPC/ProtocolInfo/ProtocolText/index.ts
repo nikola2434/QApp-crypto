@@ -1,1 +1,0 @@
-export { ProtocolText } from './ProtocolText';

@@ -1,33 +1,33 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
+import clsx from 'clsx';
 
 import style from './TimelineItem.module.scss';
 
 interface TimelineItemProps {
-  time: string;
+  time?: string;
   img?: string;
-  title: string;
-  subTitle?: string;
-  name?: string;
+  title: ReactNode;
+  subTitle?: ReactNode;
+  last?: boolean;
 }
 
-export const TimelineItem: FC<TimelineItemProps> = ({ name, time, title, img, subTitle }) => {
+export const TimelineItem: FC<TimelineItemProps> = ({ time, title, img, subTitle, last = false }) => {
   return (
     <>
       <div className={style.time}>{time}</div>
       <div className={style.item_image}>
         {img ? (
           <div className={style.image}>
-            <img alt={name} src={img} draggable={false} loading="lazy" />
+            <img alt={String(title)} src={img} draggable={false} loading="lazy" />
           </div>
         ) : (
-          <span className={style.circle}></span>
+          <span className={clsx(style.circle, last && style.last_circle)}></span>
         )}
       </div>
 
       <div className={style.info}>
         <h5>{title}</h5>
         {subTitle ? <h6>{subTitle}</h6> : null}
-        {name ? <span>{name}</span> : null}
       </div>
     </>
   );

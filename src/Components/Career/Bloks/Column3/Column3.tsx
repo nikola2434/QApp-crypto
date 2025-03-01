@@ -1,6 +1,6 @@
 import Vector6 from '@public/figures/star.svg';
 import Cup from '@public/figures/cup.svg';
-import Startech from '@public/icons/logos/startech.svg';
+import Startech from '@public/icons/startech.webp';
 
 import style from './Column3.module.scss';
 
@@ -36,7 +36,7 @@ export const Column3 = () => {
           </div>
         </div>
         <div className={style.logo}>
-          <Startech />
+          <img src={Startech} alt="startch 2024" draggable={false} loading="lazy" />
         </div>
         <p>Победители всероссийских конкурсов перспективных IT-решений</p>
       </div>

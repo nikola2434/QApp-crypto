@@ -1,0 +1,21 @@
+.logo {
+  font-size: 21px;
+  font-weight: 500;
+  white-space: nowrap;
+  background-color: var(--bg-color);
+  > strong {
+    color: var(--blue_color);
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    font-size: 11px;
+  }
+}

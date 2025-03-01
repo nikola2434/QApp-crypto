@@ -1,0 +1,45 @@
+.tasks {
+  border-radius: 40px;
+  width: 100%;
+  overflow: hidden;
+  padding: 45px;
+  position: relative;
+  display: flex;
+  margin-top: 40px;
+  .back {
+    background-color: #ebf4fd;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0px;
+    left: 0px;
+    .image {
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .tasks {
+    padding: 32px 24px 0px 24px;
+    border-radius: 26px;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tasks {
+    border-radius: 16px;
+    .back {
+     .image{
+        opacity: 0.4;
+     }
+    }
+  }
+}

@@ -1,1 +1,1 @@
-export { InfoSMPC } from './InfoSMPC';
+export { Info } from './InfoSMPC';
