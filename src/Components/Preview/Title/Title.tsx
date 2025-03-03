@@ -20,7 +20,7 @@ export const Title = () => {
       </span>
 
       <div className={style.btn}>
-        <a href="https://forms.yandex.ru/u/673d9a0cd04688885cae3421/" target="_blank" rel="noopener noreferrer">
+        <a href="https://forms.yandex.ru/u/67c063c302848fe27524f9d8/" target="_blank" rel="noopener noreferrer">
           Зарегистрироваться
         </a>
         <span>Участие бесплатно</span>

@@ -27,6 +27,7 @@
         background-color: #031c46;
         overflow: hidden;
         border-radius: 10px;
+        transition: all 0.2s ease-in-out;
         &::before {
           content: ''; /* Добавляем пустой контент */
           position: absolute;
@@ -44,6 +45,8 @@
       }
       &:hover {
         color: #f6fafd;
+      }
+      &:hover > div {
         box-shadow: 0px 4px 4px #1875f8;
       }
     }
@@ -64,6 +67,9 @@
       font-size: 14px;
       .primary {
         padding: 5px 7px;
+        &:hover > div {
+          box-shadow: 0px 2px 2px #1875f8;
+        }
       }
     }
   }

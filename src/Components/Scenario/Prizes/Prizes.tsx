@@ -4,7 +4,7 @@ import Logo from '@public/icons/museup_logo.gif';
 
 export const Prizes = () => {
   return (
-    <div className={style.prize}>
+    <div className={style.prize} id="prizes">
       <div className={style.back}>
         <img src={BG} alt="" className={style.image} draggable={false} loading="lazy" />
       </div>
