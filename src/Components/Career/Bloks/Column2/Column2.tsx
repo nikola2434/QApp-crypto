@@ -18,9 +18,10 @@ export const Column2 = () => {
       <div className={style.container}>
         <h2>Разрабатываем инновационные программные решения кибербезопасности</h2>
         <div className={style.tags}>
-          <span className={style.tag}>Постквантовая криптография</span>
-          <span className={style.tag}>Программные продукты</span>
-          <span className={style.tag}>Пилотные проекты</span>
+          <span className={style.tag}>Прикладные исследования</span>
+          <span className={style.tag}>Проектирование алгоритмов</span>
+          <span className={style.tag}>Разработка продуктов</span>
+          <span className={style.tag}>Пилотирование</span>
         </div>
       </div>
     </div>

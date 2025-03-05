@@ -7,14 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 18px;
   .container {
-    height: 50px;
     display: flex;
     align-items: center;
 
     > img {
-      height: 100%; /* Растягиваем изображение на всю высоту .container */
-      width: auto;
+      width: 100%;
       object-fit: contain;
     }
   }

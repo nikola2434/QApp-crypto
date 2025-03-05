@@ -1,6 +1,6 @@
 import Vector6 from '@public/figures/star.svg';
 import Cup from '@public/figures/cup.svg';
-import Startech from '@public/icons/startech.webp';
+import Startech from '@public/icons/startech.png';
 
 import style from './Column3.module.scss';
 

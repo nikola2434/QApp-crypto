@@ -21,9 +21,8 @@ export const Title = () => {
 
       <div className={style.btn}>
         <a href="https://forms.yandex.ru/u/67c063c302848fe27524f9d8/" target="_blank" rel="noopener noreferrer">
-          Зарегистрироваться
+          Зарегистрироваться бесплатно
         </a>
-        <span>Участие бесплатно</span>
       </div>
     </div>
   );

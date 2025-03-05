@@ -1,5 +1,6 @@
 import { TimelineItem } from './TimelineItem';
 import Expert4 from '@public/images/expert4.webp';
+import Expert5 from '@public/images/expert5.png';
 
 import style from './Timeline.module.scss';
 
@@ -18,10 +19,12 @@ export const Timeline = () => {
         img={Expert4}
       />
       <TimelineItem
+        img={Expert5}
         title={
           <>
-            Квантовая угроза. Модель атак. <br />
-            Актуальность
+            Квантовая угроза — новый риск
+            <br />
+            кибербезопасности
           </>
         }
       />

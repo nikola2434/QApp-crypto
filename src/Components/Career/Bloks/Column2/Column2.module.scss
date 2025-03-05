@@ -13,7 +13,8 @@
     align-items: start;
     justify-content: space-between;
     gap: 24px;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
+    max-height: 80px;
     > img {
       object-fit: contain;
       width: 50%;
@@ -40,7 +41,7 @@
     justify-content: space-between;
     flex-direction: column;
     flex: 1;
-    gap: 60px;
+    gap: 35px;
   }
 
   .tags {

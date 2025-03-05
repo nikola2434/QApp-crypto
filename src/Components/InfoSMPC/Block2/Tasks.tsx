@@ -1,4 +1,4 @@
-import BgProtocol from '@public/images/bg_info_block2.webp';
+import BgProtocol from '@public/images/bg_info_block2.png';
 import { LeftBlock } from './LeftBlock';
 import { RightBlock } from './RightBlock';
 

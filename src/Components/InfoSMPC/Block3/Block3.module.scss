@@ -22,6 +22,10 @@
     position: absolute;
     top: 30px;
     right: 60px;
+    > img {
+      object-fit: contain;
+      width: 715px;
+    }
   }
   .bg1 {
     position: absolute;
@@ -47,7 +51,7 @@
     }
     .bg2 {
       position: initial;
-      width: 100%;
+    //   width: 100%;
       overflow: auto;
       scrollbar-width: none; /* Firefox */
       -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -55,8 +59,8 @@
         display: none;
       }
       > img {
-        max-width: none;
-        object-fit: none;
+        // max-width: none;
+        // object-fit: none;
       }
     }
     .bg1 {
