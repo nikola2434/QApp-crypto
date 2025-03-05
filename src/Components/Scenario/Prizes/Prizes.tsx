@@ -11,7 +11,7 @@ export const Prizes = () => {
       <div className={style.container}>
         <img src={Logo} alt="" draggable={false} loading="lazy" />
         <span>
-          2 билета в музей криптографии –<br /> приз для самых внимательных
+          3 билета в музей криптографии –<br /> призы для самых внимательных
         </span>
       </div>
     </div>
