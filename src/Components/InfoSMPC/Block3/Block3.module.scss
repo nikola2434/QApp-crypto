@@ -51,7 +51,7 @@
     }
     .bg2 {
       position: initial;
-    //   width: 100%;
+      //   width: 100%;
       overflow: auto;
       scrollbar-width: none; /* Firefox */
       -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -63,14 +63,25 @@
         // object-fit: none;
       }
     }
+
     .bg1 {
-      display: none;
+      z-index: 0;
+      > img {
+        width: 90%;
+      }
     }
+
     .btn {
-      position: initial;
+      z-index: 5;
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      right: auto;
       width: 100%;
       display: flex;
       justify-content: center;
+      margin-bottom: 140px;
     }
   }
 }

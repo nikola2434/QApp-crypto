@@ -1,5 +1,5 @@
 import style from './Prizes.module.scss';
-import BG from '@public/images/bg_prize.webp';
+import BG from '@public/images/bg_prize.png';
 import Logo from '@public/icons/museup_logo.gif';
 
 export const Prizes = () => {

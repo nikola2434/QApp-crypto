@@ -53,6 +53,7 @@
   .info {
     > span {
       font-size: 20px;
+      margin-bottom: 0px;
     }
     .tags {
       gap: 5px 2px;
@@ -70,45 +71,28 @@
   }
 }
 
-@media (max-width: 800px) {
-  .info {
-    position: relative;
-    height: 100%;
-    left: auto;
-    margin-top: 15%;
-    .btn {
-      width: 100%;
-      position: absolute;
-      bottom: 150px;
-      left: 0px;
-      .link__md {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      > span {
-        color: #ffffff;
-      }
-    }
-  }
-}
-
 @media (max-width: 650px) {
   .info {
+    top: 30%;
+    left: 23px;
     padding-right: 23px;
+    .tags {
+      gap: 13px;
+    }
     > span {
-      font-size: 16px;
+      font-size: 18px;
     }
     > h1 {
-      min-width: 300px;
+      //   min-width: 300px;
       margin-top: 10px;
       font-size: 30px;
     }
   }
   .btn {
+    margin-top: 17px;
+    width: 100%;
     > a {
-      padding: 20px 0px !important;
+      padding: 18px 0px !important;
       font-size: 18px !important;
     }
   }

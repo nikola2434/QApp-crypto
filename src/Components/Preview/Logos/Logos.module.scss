@@ -7,8 +7,11 @@
   .cross {
     width: 50px;
   }
-  > a {
+  .mgtu {
     width: 300px;
+  }
+  .qapp {
+    width: 125px;
   }
   //   top: 0px;
   //   left: 0px;
@@ -24,12 +27,17 @@
 
 @media (max-width: 650px) {
   .logos {
-    gap: 0px;
+    gap: 17px;
+    justify-content: start;
     .cross {
       width: 40px;
     }
-    > a {
-      width: 250px;
+    .mgtu {
+      width: 185px;
+    }
+
+    .qapp {
+      width: 88px;
     }
   }
 }

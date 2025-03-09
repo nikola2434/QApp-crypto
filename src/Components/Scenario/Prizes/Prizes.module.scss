@@ -7,13 +7,12 @@
   background-color: #124adf;
   .back {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 150%;
     overflow: hidden;
-    top: 0px;
-    left: 0px;
+    top: -25%;
+    // transform: translate(0, );
+    right: 0px;
     .image {
-      width: 100%;
       height: 100%;
       background-position: bottom center;
       -webkit-background-size: auto;
@@ -44,6 +43,33 @@
 
 @media (max-width: 1000px) {
   .prize {
-
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .back {
+      order: 2;
+      position: relative;
+      display: block;
+      top: auto;
+      right: auto;
+      left: auto;
+      width: 100%;
+      overflow: visible;
+      .image {
+        position: absolute;
+        top: 0;
+        height: 150%;
+        width: 120%;
+        object-fit: cover;
+        left: -100px;
+        min-width: 730px;
+      }
+    }
+    .container {
+      order: 1;
+      justify-content: start;
+      gap: 20px;
+    }
   }
 }

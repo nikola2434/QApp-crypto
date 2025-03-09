@@ -70,17 +70,16 @@
 
 @media (max-width: 1200px) {
   .block1 {
+    height: 750px;
     .content {
-      gap: 330px;
+      gap: 30px;
+      justify-content: end;
     }
-
     .back {
       .shield {
-        height: 40%;
-        right: auto;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -40%);
+        height: 243px;
+        top: 140px;
+        left: 24px;
       }
     }
   }
@@ -113,8 +112,8 @@
       }
       .info2 {
         > h4 {
-          margin-bottom: 10px;
-          font-size: 17px;
+          margin-bottom: 24px;
+          font-size: 18px;
         }
       }
     }

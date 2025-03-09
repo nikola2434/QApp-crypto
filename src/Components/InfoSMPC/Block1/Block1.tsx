@@ -29,7 +29,7 @@ export const Block1 = () => {
           </span>
         </div>
         <div className={style.info2}>
-          <h4>Легко интегрировать в различные сферы</h4>
+          <h4>Комплексная защита данных</h4>
           <div className={style.icons}>
             <ItemIcon icon={CPU} />
             <ItemIcon icon={Mobile} />

@@ -35,10 +35,14 @@
 
 @media (max-width: 650px) {
   .tasks {
+    height: 750px;
     border-radius: 16px;
     .back {
      .image{
-        opacity: 0.4;
+        opacity: 0.6;
+        height: fit-content;
+        bottom: -11%;
+        width: 175%;
      }
     }
   }
