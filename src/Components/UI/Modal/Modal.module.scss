@@ -54,3 +54,11 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 650px) {
+  .modal {
+    .body_modal {
+      padding: 0px 0px;
+    }
+  }
+}
