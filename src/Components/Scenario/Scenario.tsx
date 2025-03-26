@@ -36,9 +36,9 @@ export const Scenario = () => {
         </div>
       </div>
 
-      <Button text="Участие бесплатно" size="lg">
+      {/* <Button text="Участие бесплатно" size="lg">
         Зарегистрироваться на митап
-      </Button>
+      </Button> */}
     </section>
   );
 };

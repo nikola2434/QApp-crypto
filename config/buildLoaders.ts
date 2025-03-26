@@ -1,20 +1,20 @@
-import { ModuleOptions, RuleSetRule } from "webpack";
-import { BuildOptions } from "./types";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import { ModuleOptions, RuleSetRule } from 'webpack';
+import { BuildOptions } from './types';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-export const buildLoaders = (options: BuildOptions): ModuleOptions["rules"] => {
-  const isProd = options.mode === "production";
+export const buildLoaders = (options: BuildOptions): ModuleOptions['rules'] => {
+  const isProd = options.mode === 'production';
 
   const assetLoader = {
     test: /\.(png|jpg|jpeg|gif|mp4|webm|webp)$/i,
-    type: "asset/resource",
+    type: 'asset/resource',
   };
 
   const svgrLoader = {
     test: /\.svg$/i,
     use: [
       {
-        loader: "@svgr/webpack",
+        loader: '@svgr/webpack',
         options: {
           icon: false,
         },
@@ -23,27 +23,25 @@ export const buildLoaders = (options: BuildOptions): ModuleOptions["rules"] => {
   };
 
   const styleLoader: RuleSetRule = {
-    test: /\.s[ac]ss$/i,
+    test: /\.(sass|css|scss)$/,
     use: [
-      isProd ? MiniCssExtractPlugin.loader : "style-loader",
+      isProd ? MiniCssExtractPlugin.loader : 'style-loader',
       {
-        loader: "css-loader",
+        loader: 'css-loader',
         options: {
           modules: {
-            localIdentName: isProd
-              ? "[hash:base64:10]"
-              : "[local]_[hash:base64:5]",
+            localIdentName: isProd ? '[hash:base64:10]' : '[local]_[hash:base64:5]',
           },
         },
       },
-      "sass-loader",
+      'sass-loader',
     ],
   };
 
   const tsLoader: RuleSetRule = {
     exclude: /node_modules/,
     test: /\.tsx?$/,
-    use: "ts-loader",
+    use: 'ts-loader',
   };
 
   return [assetLoader, svgrLoader, styleLoader, tsLoader];

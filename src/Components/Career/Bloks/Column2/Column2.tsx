@@ -1,4 +1,4 @@
-import QApp from '@public/icons/QApp.webp';
+import QApp from '@public/icons/QApp.svg';
 import Partner from '@public/icons/Partner.webp';
 import Noc from '@public/icons/Noc.webp';
 
@@ -8,7 +8,7 @@ export const Column2 = () => {
   return (
     <div className={style.column2}>
       <div className={style.header}>
-        <img src={QApp} alt="QApp" draggable={false} loading="lazy" />
+        <QApp />
         <div className={style.sub_logos}>
           <img src={Partner} alt="QApp" draggable={false} loading="lazy" />
           <img src={Noc} alt="QApp" draggable={false} loading="lazy" />

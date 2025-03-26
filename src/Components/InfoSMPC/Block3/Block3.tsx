@@ -19,9 +19,9 @@ export const Block3 = () => {
       <div className={style.bg2}>
         <img src={bg2} alt="" draggable={false} loading="lazy" />
       </div>
-      <div className={style.btn}>
+      {/* <div className={style.btn}>
         <Button text="Участие бесплатно">Узнать, как защитить данные</Button>
-      </div>
+      </div> */}
     </div>
   );
 };

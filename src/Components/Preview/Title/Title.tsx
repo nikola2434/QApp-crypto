@@ -19,11 +19,11 @@ export const Title = () => {
         настоящего и ближайшего будущего
       </span>
 
-      <div className={style.btn}>
+      {/* <div className={style.btn}>
         <a href="https://forms.yandex.ru/u/67c063c302848fe27524f9d8/" target="_blank" rel="noopener noreferrer">
           Зарегистрироваться бесплатно
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

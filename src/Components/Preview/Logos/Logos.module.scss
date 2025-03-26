@@ -21,14 +21,13 @@
   .logos {
     gap: 0px;
     margin-top: 10px;
-    justify-content: space-between;
+    justify-content: start;
   }
 }
 
 @media (max-width: 650px) {
   .logos {
     gap: 17px;
-    justify-content: start;
     .cross {
       width: 40px;
     }

@@ -1,0 +1,1 @@
+export { HowItWas } from './HowItWas';

@@ -1,0 +1,89 @@
+/* Основа */
+.carousel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 80vw;
+    max-width: 800px;
+    max-height: 90vh;
+  }
+
+  /* Слайд */
+  .carousel-slide {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 соотношение */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+  }
+
+  /* Кнопки */
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .prev-btn { left: 10px; }
+  .next-btn { right: 10px; }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  /* Индикаторы */
+  .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .indicator.active {
+    background: white;
+  }
