@@ -63,7 +63,7 @@ export const Carousel: FC<PropType> = ({ images, options, setActiveIndex, active
           ))}
           {videoSrc && (
             <div className={styles.embla__slide} key={images.length}>
-              <video controls loop autoPlay muted draggable="false" ref={videoRef}>
+              <video controls autoPlay muted draggable="false" ref={videoRef}>
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
