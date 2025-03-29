@@ -9,7 +9,7 @@ import { Button } from '@UI/Button';
 export const Scenario = () => {
   return (
     <section className={style.scenario}>
-      <Header>Что будет на митапе</Header>
+      <Header>Что было на митапе</Header>
 
       <div className={style.container}>
         <div className={style.container_grid}>
